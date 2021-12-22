@@ -24,6 +24,7 @@ local Syntax13 = Instance.new("TextButton")
 local StreamSniper = Instance.new("TextButton")
 local OwlHub = Instance.new("TextButton")
 local FEDog = Instance.new("TextButton")
+local SCP096 = Instance.new("TextButton")
 local CreditsFrame = Instance.new("Frame")
 local Credits1 = Instance.new("TextLabel")
 local Credits2 = Instance.new("TextLabel")
@@ -145,7 +146,6 @@ ScriptsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ScriptsFrame.BackgroundTransparency = 1.000
 ScriptsFrame.Position = UDim2.new(0.246045694, 0, 0.167647064, 0)
 ScriptsFrame.Size = UDim2.new(0, 429, 0, 282)
-ScriptsFrame.Visible = false
 
 LXHub.Name = "LXHub"
 LXHub.Parent = ScriptsFrame
@@ -207,6 +207,16 @@ FEDog.Text = "FE Dog"
 FEDog.TextColor3 = Color3.fromRGB(0, 0, 0)
 FEDog.TextSize = 14.000
 
+SCP096.Name = "SCP096"
+SCP096.Parent = ScriptsFrame
+SCP096.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
+SCP096.Position = UDim2.new(0.307692289, 0, 0.851063848, 0)
+SCP096.Size = UDim2.new(0, 154, 0, 31)
+SCP096.Font = Enum.Font.Fantasy
+SCP096.Text = "SCP - 096"
+SCP096.TextColor3 = Color3.fromRGB(0, 0, 0)
+SCP096.TextSize = 14.000
+
 CreditsFrame.Name = "CreditsFrame"
 CreditsFrame.Parent = Frame
 CreditsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -243,6 +253,7 @@ SettingsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 SettingsFrame.BackgroundTransparency = 1.000
 SettingsFrame.Position = UDim2.new(0.244288221, 0, 0.167647064, 0)
 SettingsFrame.Size = UDim2.new(0, 429, 0, 282)
+SettingsFrame.Visible = false
 
 Desc.Name = "Desc"
 Desc.Parent = SettingsFrame
@@ -274,7 +285,7 @@ UICorner_3.Parent = Frame
 
 -- Scripts:
 
-local function LPGLW_fake_script() -- Scripts.LocalScript 
+local function OIBK_fake_script() -- Scripts.LocalScript 
 	local script = Instance.new('LocalScript', Scripts)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -283,8 +294,8 @@ local function LPGLW_fake_script() -- Scripts.LocalScript
 		script.Parent.Parent.Parent.ScriptsFrame.Visible = true
 	end)
 end
-coroutine.wrap(LPGLW_fake_script)()
-local function UAAA_fake_script() -- Credits.LocalScript 
+coroutine.wrap(OIBK_fake_script)()
+local function DLPJBO_fake_script() -- Credits.LocalScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -293,8 +304,8 @@ local function UAAA_fake_script() -- Credits.LocalScript
 		script.Parent.Parent.Parent.ScriptsFrame.Visible = false
 	end)
 end
-coroutine.wrap(UAAA_fake_script)()
-local function KDDJIY_fake_script() -- Settings.LocalScript 
+coroutine.wrap(DLPJBO_fake_script)()
+local function RJYQ_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -303,16 +314,16 @@ local function KDDJIY_fake_script() -- Settings.LocalScript
 		script.Parent.Parent.Parent.ScriptsFrame.Visible = false
 	end)
 end
-coroutine.wrap(KDDJIY_fake_script)()
-local function PNWGKQY_fake_script() -- LXHub.LocalScript 
+coroutine.wrap(RJYQ_fake_script)()
+local function CXXIZ_fake_script() -- LXHub.LocalScript 
 	local script = Instance.new('LocalScript', LXHub)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/LionelStreaming/GumaHub/main/LX-FE-Hub"))()
 	end)
 end
-coroutine.wrap(PNWGKQY_fake_script)()
-local function SMWWYV_fake_script() -- VHUB.LocalScript 
+coroutine.wrap(CXXIZ_fake_script)()
+local function KYFKEV_fake_script() -- VHUB.LocalScript 
 	local script = Instance.new('LocalScript', VHUB)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -322,8 +333,8 @@ local function SMWWYV_fake_script() -- VHUB.LocalScript
 	
 	
 end
-coroutine.wrap(SMWWYV_fake_script)()
-local function HUZZNTK_fake_script() -- Syntax13.LocalScript 
+coroutine.wrap(KYFKEV_fake_script)()
+local function AAIOI_fake_script() -- Syntax13.LocalScript 
 	local script = Instance.new('LocalScript', Syntax13)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -333,8 +344,8 @@ local function HUZZNTK_fake_script() -- Syntax13.LocalScript
 	
 	
 end
-coroutine.wrap(HUZZNTK_fake_script)()
-local function ZYRIWF_fake_script() -- StreamSniper.LocalScript 
+coroutine.wrap(AAIOI_fake_script)()
+local function NAGTJV_fake_script() -- StreamSniper.LocalScript 
 	local script = Instance.new('LocalScript', StreamSniper)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -344,8 +355,8 @@ local function ZYRIWF_fake_script() -- StreamSniper.LocalScript
 	
 	
 end
-coroutine.wrap(ZYRIWF_fake_script)()
-local function TTYTZ_fake_script() -- OwlHub.LocalScript 
+coroutine.wrap(NAGTJV_fake_script)()
+local function AGEZWQ_fake_script() -- OwlHub.LocalScript 
 	local script = Instance.new('LocalScript', OwlHub)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -355,8 +366,8 @@ local function TTYTZ_fake_script() -- OwlHub.LocalScript
 	
 	
 end
-coroutine.wrap(TTYTZ_fake_script)()
-local function XLIIK_fake_script() -- FEDog.LocalScript 
+coroutine.wrap(AGEZWQ_fake_script)()
+local function MGISP_fake_script() -- FEDog.LocalScript 
 	local script = Instance.new('LocalScript', FEDog)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -366,8 +377,19 @@ local function XLIIK_fake_script() -- FEDog.LocalScript
 	
 	
 end
-coroutine.wrap(XLIIK_fake_script)()
-local function ZLUT_fake_script() -- Frame.LocalScript 
+coroutine.wrap(MGISP_fake_script)()
+local function VOJYX_fake_script() -- SCP096.LocalScript 
+	local script = Instance.new('LocalScript', SCP096)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/garfieldscripter/fe-scp-096/main/scp"))()
+	end)
+	
+	
+	
+end
+coroutine.wrap(VOJYX_fake_script)()
+local function YDQQP_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -410,4 +432,4 @@ local function ZLUT_fake_script() -- Frame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ZLUT_fake_script)()
+coroutine.wrap(YDQQP_fake_script)()
