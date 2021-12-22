@@ -1,5 +1,4 @@
--- Gui to Lua
--- Version: 3.2
+
 
 -- Instances:
 
@@ -18,20 +17,33 @@ local Settings = Instance.new("TextButton")
 local help = Instance.new("ImageButton")
 local UICorner_2 = Instance.new("UICorner")
 local ScriptsFrame = Instance.new("Frame")
-local LXHub = Instance.new("TextButton")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local UICorner_3 = Instance.new("UICorner")
 local VHUB = Instance.new("TextButton")
 local Syntax13 = Instance.new("TextButton")
-local StreamSniper = Instance.new("TextButton")
+local SCP096 = Instance.new("TextButton")
 local OwlHub = Instance.new("TextButton")
 local FEDog = Instance.new("TextButton")
-local SCP096 = Instance.new("TextButton")
+local LXHub = Instance.new("TextButton")
+local StreamSniper = Instance.new("TextButton")
+local controllabledummy = Instance.new("TextButton")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local Frame_2 = Instance.new("Frame")
+local catpet = Instance.new("TextButton")
+local ImageLabel_4 = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local fesoldier = Instance.new("TextButton")
+local ImageLabel_5 = Instance.new("ImageLabel")
+local feskateboard = Instance.new("TextButton")
+local ImageLabel_6 = Instance.new("ImageLabel")
 local CreditsFrame = Instance.new("Frame")
 local Credits1 = Instance.new("TextLabel")
 local Credits2 = Instance.new("TextLabel")
 local SettingsFrame = Instance.new("Frame")
 local Desc = Instance.new("TextLabel")
 local Title = Instance.new("TextLabel")
-local UICorner_3 = Instance.new("UICorner")
+local UICorner_4 = Instance.new("UICorner")
 
 --Properties:
 
@@ -41,7 +53,7 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.039978385, 0, 0.570552111, 0)
+Frame.Position = UDim2.new(0.0361966453, 0, 0.33251527, 0)
 Frame.Size = UDim2.new(0, 569, 0, 340)
 
 TopBar.Name = "TopBar"
@@ -69,7 +81,7 @@ UICorner.Parent = TopBar
 SideBar.Name = "SideBar"
 SideBar.Parent = Frame
 SideBar.BackgroundColor3 = Color3.fromRGB(16, 16, 16)
-SideBar.Position = UDim2.new(-0.000606708229, 0, 0.170498043, 0)
+SideBar.Position = UDim2.new(-0.000606708229, 0, 0.161674514, 0)
 SideBar.Size = UDim2.new(0, 141, 0, 282)
 SideBar.ZIndex = 2131276372
 
@@ -120,8 +132,8 @@ Settings.Name = "Settings"
 Settings.Parent = SideBar
 Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Settings.BackgroundTransparency = 1.000
-Settings.Position = UDim2.new(0.0709219873, 0, 0.524822712, 0)
-Settings.Size = UDim2.new(0, 126, 0, 35)
+Settings.Position = UDim2.new(0.0450015254, 0, 0.507092178, 0)
+Settings.Size = UDim2.new(0, 129, 0, 40)
 Settings.Font = Enum.Font.Fantasy
 Settings.Text = "Home"
 Settings.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -148,20 +160,19 @@ ScriptsFrame.Position = UDim2.new(0.246045694, 0, 0.167647064, 0)
 ScriptsFrame.Size = UDim2.new(0, 429, 0, 282)
 ScriptsFrame.Visible = false
 
-LXHub.Name = "LXHub"
-LXHub.Parent = ScriptsFrame
-LXHub.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
-LXHub.Position = UDim2.new(0.0675990656, 0, 0.120567381, 0)
-LXHub.Size = UDim2.new(0, 154, 0, 31)
-LXHub.Font = Enum.Font.Fantasy
-LXHub.Text = "LX Hub"
-LXHub.TextColor3 = Color3.fromRGB(0, 0, 0)
-LXHub.TextSize = 14.000
+ScrollingFrame.Parent = ScriptsFrame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+ScrollingFrame.Position = UDim2.new(0.00233100238, 0, -0.0460992903, 0)
+ScrollingFrame.Size = UDim2.new(0, 428, 0, 296)
+ScrollingFrame.ZIndex = 0
+
+UICorner_3.Parent = ScrollingFrame
 
 VHUB.Name = "VHUB"
-VHUB.Parent = ScriptsFrame
+VHUB.Parent = ScrollingFrame
 VHUB.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
-VHUB.Position = UDim2.new(0.543123543, 0, 0.120567381, 0)
+VHUB.Position = UDim2.new(0.0302867256, 0, 0.195035324, 0)
 VHUB.Size = UDim2.new(0, 154, 0, 31)
 VHUB.Font = Enum.Font.Fantasy
 VHUB.Text = "VHUB"
@@ -169,29 +180,29 @@ VHUB.TextColor3 = Color3.fromRGB(0, 0, 0)
 VHUB.TextSize = 14.000
 
 Syntax13.Name = "Syntax 1.3"
-Syntax13.Parent = ScriptsFrame
+Syntax13.Parent = ScrollingFrame
 Syntax13.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
-Syntax13.Position = UDim2.new(0.543123543, 0, 0.382978737, 0)
+Syntax13.Position = UDim2.new(0.461429507, 0, 0.195035487, 0)
 Syntax13.Size = UDim2.new(0, 154, 0, 31)
 Syntax13.Font = Enum.Font.Fantasy
 Syntax13.Text = "Syntax 1.3"
 Syntax13.TextColor3 = Color3.fromRGB(0, 0, 0)
 Syntax13.TextSize = 14.000
 
-StreamSniper.Name = "Stream Sniper"
-StreamSniper.Parent = ScriptsFrame
-StreamSniper.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
-StreamSniper.Position = UDim2.new(0.0675990582, 0, 0.627659559, 0)
-StreamSniper.Size = UDim2.new(0, 154, 0, 31)
-StreamSniper.Font = Enum.Font.Fantasy
-StreamSniper.Text = "Stream Sniper"
-StreamSniper.TextColor3 = Color3.fromRGB(0, 0, 0)
-StreamSniper.TextSize = 14.000
+SCP096.Name = "SCP096"
+SCP096.Parent = ScrollingFrame
+SCP096.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
+SCP096.Position = UDim2.new(0.258708596, 0, 0.43617022, 0)
+SCP096.Size = UDim2.new(0, 154, 0, 31)
+SCP096.Font = Enum.Font.Fantasy
+SCP096.Text = "SCP - 096"
+SCP096.TextColor3 = Color3.fromRGB(0, 0, 0)
+SCP096.TextSize = 14.000
 
 OwlHub.Name = "OwlHub"
-OwlHub.Parent = ScriptsFrame
+OwlHub.Parent = ScrollingFrame
 OwlHub.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
-OwlHub.Position = UDim2.new(0.0675990582, 0, 0.382978737, 0)
+OwlHub.Position = UDim2.new(0.0302867107, 0, 0.0921986476, 0)
 OwlHub.Size = UDim2.new(0, 154, 0, 31)
 OwlHub.Font = Enum.Font.Fantasy
 OwlHub.Text = "OwlHub"
@@ -199,24 +210,127 @@ OwlHub.TextColor3 = Color3.fromRGB(0, 0, 0)
 OwlHub.TextSize = 14.000
 
 FEDog.Name = "FE Dog"
-FEDog.Parent = ScriptsFrame
+FEDog.Parent = ScrollingFrame
 FEDog.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
-FEDog.Position = UDim2.new(0.543123543, 0, 0.627659559, 0)
+FEDog.Position = UDim2.new(0.459093183, 0, 0.0921985283, 0)
 FEDog.Size = UDim2.new(0, 154, 0, 31)
 FEDog.Font = Enum.Font.Fantasy
 FEDog.Text = "FE Dog"
 FEDog.TextColor3 = Color3.fromRGB(0, 0, 0)
 FEDog.TextSize = 14.000
 
-SCP096.Name = "SCP096"
-SCP096.Parent = ScriptsFrame
-SCP096.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
-SCP096.Position = UDim2.new(0.307692289, 0, 0.851063848, 0)
-SCP096.Size = UDim2.new(0, 154, 0, 31)
-SCP096.Font = Enum.Font.Fantasy
-SCP096.Text = "SCP - 096"
-SCP096.TextColor3 = Color3.fromRGB(0, 0, 0)
-SCP096.TextSize = 14.000
+LXHub.Name = "LXHub"
+LXHub.Parent = ScrollingFrame
+LXHub.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
+LXHub.Position = UDim2.new(0.0302867256, 0, 0.308510482, 0)
+LXHub.Size = UDim2.new(0, 154, 0, 31)
+LXHub.Font = Enum.Font.Fantasy
+LXHub.Text = "LXHub"
+LXHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+LXHub.TextSize = 14.000
+
+StreamSniper.Name = "Stream Sniper"
+StreamSniper.Parent = ScrollingFrame
+StreamSniper.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
+StreamSniper.Position = UDim2.new(0.460193276, 0, 0.308510482, 0)
+StreamSniper.Size = UDim2.new(0, 154, 0, 31)
+StreamSniper.Font = Enum.Font.Fantasy
+StreamSniper.Text = "Stream Sniper"
+StreamSniper.TextColor3 = Color3.fromRGB(0, 0, 0)
+StreamSniper.TextSize = 14.000
+
+controllabledummy.Name = "controllable dummy"
+controllabledummy.Parent = ScrollingFrame
+controllabledummy.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
+controllabledummy.Position = UDim2.new(0.497026384, 0, 0.675531983, 0)
+controllabledummy.Size = UDim2.new(0, 154, 0, 31)
+controllabledummy.Font = Enum.Font.Fantasy
+controllabledummy.Text = "Controllable Dummy"
+controllabledummy.TextColor3 = Color3.fromRGB(0, 0, 0)
+controllabledummy.TextSize = 14.000
+
+ImageLabel_3.Parent = ScrollingFrame
+ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_3.BackgroundTransparency = 1.000
+ImageLabel_3.Position = UDim2.new(0.17289716, 0, 0.747347534, 0)
+ImageLabel_3.Size = UDim2.new(0, 30, 0, 27)
+ImageLabel_3.Image = "http://www.roblox.com/asset/?id=614809143"
+
+Frame_2.Parent = ScrollingFrame
+Frame_2.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+Frame_2.Position = UDim2.new(0, 0, 0.519503534, 0)
+Frame_2.Size = UDim2.new(0, 405, 0, 9)
+
+catpet.Name = "cat pet"
+catpet.Parent = ScrollingFrame
+catpet.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
+catpet.Position = UDim2.new(0.0297366679, 0, 0.675532043, 0)
+catpet.Size = UDim2.new(0, 154, 0, 31)
+catpet.Font = Enum.Font.Fantasy
+catpet.Text = "FE Cat Pet "
+catpet.TextColor3 = Color3.fromRGB(0, 0, 0)
+catpet.TextSize = 14.000
+
+ImageLabel_4.Parent = ScrollingFrame
+ImageLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_4.BackgroundTransparency = 1.000
+ImageLabel_4.Position = UDim2.new(0.640186906, 0, 0.742028356, 0)
+ImageLabel_4.Size = UDim2.new(0, 30, 0, 27)
+ImageLabel_4.Image = "http://www.roblox.com/asset/?id=614809143"
+
+TextLabel.Parent = ScrollingFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.186915889, 0, 0.00354609918, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.Fantasy
+TextLabel.Text = "Free FE Scripts"
+TextLabel.TextColor3 = Color3.fromRGB(202, 202, 202)
+TextLabel.TextSize = 25.000
+
+TextLabel_2.Parent = ScrollingFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.203271031, 0, 0.569148958, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.Fantasy
+TextLabel_2.Text = "Paid FE Scripts (Robux)"
+TextLabel_2.TextColor3 = Color3.fromRGB(202, 202, 202)
+TextLabel_2.TextSize = 25.000
+
+fesoldier.Name = "fe soldier"
+fesoldier.Parent = ScrollingFrame
+fesoldier.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
+fesoldier.Position = UDim2.new(0.0297366548, 0, 0.854610026, 0)
+fesoldier.Size = UDim2.new(0, 154, 0, 31)
+fesoldier.Font = Enum.Font.Fantasy
+fesoldier.Text = "FE Soldier AI"
+fesoldier.TextColor3 = Color3.fromRGB(0, 0, 0)
+fesoldier.TextSize = 14.000
+
+ImageLabel_5.Parent = ScrollingFrame
+ImageLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_5.BackgroundTransparency = 1.000
+ImageLabel_5.Position = UDim2.new(0.17289716, 0, 0.924652517, 0)
+ImageLabel_5.Size = UDim2.new(0, 30, 0, 27)
+ImageLabel_5.Image = "http://www.roblox.com/asset/?id=614809143"
+
+feskateboard.Name = "fe skateboard"
+feskateboard.Parent = ScrollingFrame
+feskateboard.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
+feskateboard.Position = UDim2.new(0.494689941, 0, 0.854610026, 0)
+feskateboard.Size = UDim2.new(0, 154, 0, 31)
+feskateboard.Font = Enum.Font.Fantasy
+feskateboard.Text = "FE Soldier AI"
+feskateboard.TextColor3 = Color3.fromRGB(0, 0, 0)
+feskateboard.TextSize = 14.000
+
+ImageLabel_6.Parent = ScrollingFrame
+ImageLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_6.BackgroundTransparency = 1.000
+ImageLabel_6.Position = UDim2.new(0.637850404, 0, 0.924652517, 0)
+ImageLabel_6.Size = UDim2.new(0, 30, 0, 27)
+ImageLabel_6.Image = "http://www.roblox.com/asset/?id=614809143"
 
 CreditsFrame.Name = "CreditsFrame"
 CreditsFrame.Parent = Frame
@@ -281,11 +395,11 @@ Title.TextColor3 = Color3.fromRGB(198, 198, 198)
 Title.TextSize = 25.000
 Title.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
-UICorner_3.Parent = Frame
+UICorner_4.Parent = Frame
 
 -- Scripts:
 
-local function NOPR_fake_script() -- Scripts.LocalScript 
+local function QLTSDHM_fake_script() -- Scripts.LocalScript 
 	local script = Instance.new('LocalScript', Scripts)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -294,8 +408,8 @@ local function NOPR_fake_script() -- Scripts.LocalScript
 		script.Parent.Parent.Parent.ScriptsFrame.Visible = true
 	end)
 end
-coroutine.wrap(NOPR_fake_script)()
-local function SLVCV_fake_script() -- Credits.LocalScript 
+coroutine.wrap(QLTSDHM_fake_script)()
+local function YLIWFFX_fake_script() -- Credits.LocalScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -304,8 +418,8 @@ local function SLVCV_fake_script() -- Credits.LocalScript
 		script.Parent.Parent.Parent.ScriptsFrame.Visible = false
 	end)
 end
-coroutine.wrap(SLVCV_fake_script)()
-local function GDWEYT_fake_script() -- Settings.LocalScript 
+coroutine.wrap(YLIWFFX_fake_script)()
+local function ZAAZQV_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -314,16 +428,8 @@ local function GDWEYT_fake_script() -- Settings.LocalScript
 		script.Parent.Parent.Parent.ScriptsFrame.Visible = false
 	end)
 end
-coroutine.wrap(GDWEYT_fake_script)()
-local function PVJPENU_fake_script() -- LXHub.LocalScript 
-	local script = Instance.new('LocalScript', LXHub)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/LionelStreaming/GumaHub/main/LX-FE-Hub"))()
-	end)
-end
-coroutine.wrap(PVJPENU_fake_script)()
-local function HZDVUBD_fake_script() -- VHUB.LocalScript 
+coroutine.wrap(ZAAZQV_fake_script)()
+local function DYCHRYK_fake_script() -- VHUB.LocalScript 
 	local script = Instance.new('LocalScript', VHUB)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -333,8 +439,8 @@ local function HZDVUBD_fake_script() -- VHUB.LocalScript
 	
 	
 end
-coroutine.wrap(HZDVUBD_fake_script)()
-local function VUVA_fake_script() -- Syntax13.LocalScript 
+coroutine.wrap(DYCHRYK_fake_script)()
+local function GVIL_fake_script() -- Syntax13.LocalScript 
 	local script = Instance.new('LocalScript', Syntax13)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -344,41 +450,8 @@ local function VUVA_fake_script() -- Syntax13.LocalScript
 	
 	
 end
-coroutine.wrap(VUVA_fake_script)()
-local function XFMCDMS_fake_script() -- StreamSniper.LocalScript 
-	local script = Instance.new('LocalScript', StreamSniper)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Blissful4992/Miscellaneous/main/StreamSniper.lua"))()
-	end)
-	
-	
-	
-end
-coroutine.wrap(XFMCDMS_fake_script)()
-local function NBUSJ_fake_script() -- OwlHub.LocalScript 
-	local script = Instance.new('LocalScript', OwlHub)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
-	end)
-	
-	
-	
-end
-coroutine.wrap(NBUSJ_fake_script)()
-local function ZIZF_fake_script() -- FEDog.LocalScript 
-	local script = Instance.new('LocalScript', FEDog)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/garfieldscripter/FE-Dog-Pet-not-mine-/main/fe%20dog"))()
-	end)
-	
-	
-	
-end
-coroutine.wrap(ZIZF_fake_script)()
-local function AFRHQQF_fake_script() -- SCP096.LocalScript 
+coroutine.wrap(GVIL_fake_script)()
+local function HETDZ_fake_script() -- SCP096.LocalScript 
 	local script = Instance.new('LocalScript', SCP096)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -388,8 +461,96 @@ local function AFRHQQF_fake_script() -- SCP096.LocalScript
 	
 	
 end
-coroutine.wrap(AFRHQQF_fake_script)()
-local function UGDLAUP_fake_script() -- Frame.LocalScript 
+coroutine.wrap(HETDZ_fake_script)()
+local function OKVGBGM_fake_script() -- OwlHub.LocalScript 
+	local script = Instance.new('LocalScript', OwlHub)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
+	end)
+	
+	
+	
+end
+coroutine.wrap(OKVGBGM_fake_script)()
+local function OQRK_fake_script() -- FEDog.LocalScript 
+	local script = Instance.new('LocalScript', FEDog)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/garfieldscripter/FE-Dog-Pet-not-mine-/main/fe%20dog"))()
+	end)
+	
+	
+	
+end
+coroutine.wrap(OQRK_fake_script)()
+local function ONZYRTE_fake_script() -- LXHub.LocalScript 
+	local script = Instance.new('LocalScript', LXHub)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/LionelStreaming/GumaHub/main/LX-FE-Hub"))()
+	end)
+	
+	
+	
+end
+coroutine.wrap(ONZYRTE_fake_script)()
+local function LOBZZZ_fake_script() -- StreamSniper.LocalScript 
+	local script = Instance.new('LocalScript', StreamSniper)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Blissful4992/Miscellaneous/main/StreamSniper.lua"))()
+	end)
+	
+	
+	
+end
+coroutine.wrap(LOBZZZ_fake_script)()
+local function OHWD_fake_script() -- controllabledummy.LocalScript 
+	local script = Instance.new('LocalScript', controllabledummy)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/garfieldscripter/fe-dummy/main/fe%20dummy"))()
+	end)
+	
+	
+	
+end
+coroutine.wrap(OHWD_fake_script)()
+local function VXMQCT_fake_script() -- catpet.LocalScript 
+	local script = Instance.new('LocalScript', catpet)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/garfieldscripter/fe-cat/main/fe%20cat"))()
+	end)
+	
+	
+	
+end
+coroutine.wrap(VXMQCT_fake_script)()
+local function KNZVIX_fake_script() -- fesoldier.LocalScript 
+	local script = Instance.new('LocalScript', fesoldier)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/garfieldscripter/fe-dummy/main/fe%20dummy"))()
+	end)
+	
+	
+	
+end
+coroutine.wrap(KNZVIX_fake_script)()
+local function PWNRVZ_fake_script() -- feskateboard.LocalScript 
+	local script = Instance.new('LocalScript', feskateboard)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/garfieldscripter/skateboard/main/skateboard%20fe"))()
+	end)
+	
+	
+	
+end
+coroutine.wrap(PWNRVZ_fake_script)()
+local function RBVTLQ_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -432,4 +593,4 @@ local function UGDLAUP_fake_script() -- Frame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(UGDLAUP_fake_script)() 
+coroutine.wrap(RBVTLQ_fake_script)()
