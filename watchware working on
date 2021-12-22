@@ -1,0 +1,413 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TopBar = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local UICorner = Instance.new("UICorner")
+local SideBar = Instance.new("Frame")
+local Scripts = Instance.new("TextButton")
+local folder = Instance.new("ImageButton")
+local Credits = Instance.new("TextButton")
+local people = Instance.new("ImageButton")
+local Settings = Instance.new("TextButton")
+local help = Instance.new("ImageButton")
+local UICorner_2 = Instance.new("UICorner")
+local ScriptsFrame = Instance.new("Frame")
+local LXHub = Instance.new("TextButton")
+local VHUB = Instance.new("TextButton")
+local Syntax13 = Instance.new("TextButton")
+local StreamSniper = Instance.new("TextButton")
+local OwlHub = Instance.new("TextButton")
+local FEDog = Instance.new("TextButton")
+local CreditsFrame = Instance.new("Frame")
+local Credits1 = Instance.new("TextLabel")
+local Credits2 = Instance.new("TextLabel")
+local SettingsFrame = Instance.new("Frame")
+local Desc = Instance.new("TextLabel")
+local Title = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.039978385, 0, 0.570552111, 0)
+Frame.Size = UDim2.new(0, 569, 0, 340)
+
+TopBar.Name = "TopBar"
+TopBar.Parent = Frame
+TopBar.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+TopBar.Position = UDim2.new(-0.000606704503, 0, -0.00584630668, 0)
+TopBar.Size = UDim2.new(0, 569, 0, 58)
+
+ImageLabel.Parent = TopBar
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(-0.0702988058, 0, -0.965517282, 0)
+ImageLabel.Size = UDim2.new(0, 100, 0, 89)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=333602063"
+
+ImageLabel_2.Parent = TopBar
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.Position = UDim2.new(0.045694232, 0, -0.534482956, 0)
+ImageLabel_2.Size = UDim2.new(0, 565, 0, 89)
+ImageLabel_2.Image = "http://www.roblox.com/asset/?id=850806532"
+
+UICorner.Parent = TopBar
+
+SideBar.Name = "SideBar"
+SideBar.Parent = Frame
+SideBar.BackgroundColor3 = Color3.fromRGB(16, 16, 16)
+SideBar.Position = UDim2.new(-0.000606708229, 0, 0.170498043, 0)
+SideBar.Size = UDim2.new(0, 141, 0, 282)
+SideBar.ZIndex = 2131276372
+
+Scripts.Name = "Scripts"
+Scripts.Parent = SideBar
+Scripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scripts.BackgroundTransparency = 1.000
+Scripts.Position = UDim2.new(0.184397161, 0, 0.0709219873, 0)
+Scripts.Size = UDim2.new(0, 100, 0, 35)
+Scripts.Font = Enum.Font.Fantasy
+Scripts.Text = "Scripts"
+Scripts.TextColor3 = Color3.fromRGB(255, 255, 255)
+Scripts.TextSize = 16.000
+
+folder.Name = "folder"
+folder.Parent = Scripts
+folder.BackgroundTransparency = 1.000
+folder.LayoutOrder = 9
+folder.Position = UDim2.new(-0.102198824, 0, 0.133304149, 0)
+folder.Size = UDim2.new(0, 25, 0, 25)
+folder.ZIndex = 2
+folder.Image = "rbxassetid://3926305904"
+folder.ImageRectOffset = Vector2.new(804, 44)
+folder.ImageRectSize = Vector2.new(36, 36)
+
+Credits.Name = "Credits"
+Credits.Parent = SideBar
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.Position = UDim2.new(0.113475174, 0, 0.301418453, 0)
+Credits.Size = UDim2.new(0, 120, 0, 35)
+Credits.Font = Enum.Font.Fantasy
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextSize = 16.000
+
+people.Name = "people"
+people.Parent = Credits
+people.BackgroundTransparency = 1.000
+people.Position = UDim2.new(-0.00719882548, 0, 0.127344429, 0)
+people.Size = UDim2.new(0, 25, 0, 25)
+people.ZIndex = 2
+people.Image = "rbxassetid://3926305904"
+people.ImageRectOffset = Vector2.new(144, 4)
+people.ImageRectSize = Vector2.new(24, 24)
+
+Settings.Name = "Settings"
+Settings.Parent = SideBar
+Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settings.BackgroundTransparency = 1.000
+Settings.Position = UDim2.new(0.0709219873, 0, 0.524822712, 0)
+Settings.Size = UDim2.new(0, 126, 0, 35)
+Settings.Font = Enum.Font.Fantasy
+Settings.Text = "Home"
+Settings.TextColor3 = Color3.fromRGB(255, 255, 255)
+Settings.TextSize = 16.000
+
+help.Name = "help"
+help.Parent = Settings
+help.BackgroundTransparency = 1.000
+help.LayoutOrder = 3
+help.Position = UDim2.new(0.0476190485, 0, 0.22857143, 0)
+help.Size = UDim2.new(0, 24, 0, 21)
+help.ZIndex = 2
+help.Image = "rbxassetid://3926305904"
+help.ImageRectOffset = Vector2.new(924, 164)
+help.ImageRectSize = Vector2.new(36, 36)
+
+UICorner_2.Parent = SideBar
+
+ScriptsFrame.Name = "ScriptsFrame"
+ScriptsFrame.Parent = Frame
+ScriptsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptsFrame.BackgroundTransparency = 1.000
+ScriptsFrame.Position = UDim2.new(0.246045694, 0, 0.167647064, 0)
+ScriptsFrame.Size = UDim2.new(0, 429, 0, 282)
+ScriptsFrame.Visible = false
+
+LXHub.Name = "LXHub"
+LXHub.Parent = ScriptsFrame
+LXHub.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
+LXHub.Position = UDim2.new(0.0675990656, 0, 0.120567381, 0)
+LXHub.Size = UDim2.new(0, 154, 0, 31)
+LXHub.Font = Enum.Font.Fantasy
+LXHub.Text = "LX Hub"
+LXHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+LXHub.TextSize = 14.000
+
+VHUB.Name = "VHUB"
+VHUB.Parent = ScriptsFrame
+VHUB.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
+VHUB.Position = UDim2.new(0.543123543, 0, 0.120567381, 0)
+VHUB.Size = UDim2.new(0, 154, 0, 31)
+VHUB.Font = Enum.Font.Fantasy
+VHUB.Text = "VHUB"
+VHUB.TextColor3 = Color3.fromRGB(0, 0, 0)
+VHUB.TextSize = 14.000
+
+Syntax13.Name = "Syntax 1.3"
+Syntax13.Parent = ScriptsFrame
+Syntax13.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
+Syntax13.Position = UDim2.new(0.543123543, 0, 0.382978737, 0)
+Syntax13.Size = UDim2.new(0, 154, 0, 31)
+Syntax13.Font = Enum.Font.Fantasy
+Syntax13.Text = "Syntax 1.3"
+Syntax13.TextColor3 = Color3.fromRGB(0, 0, 0)
+Syntax13.TextSize = 14.000
+
+StreamSniper.Name = "Stream Sniper"
+StreamSniper.Parent = ScriptsFrame
+StreamSniper.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
+StreamSniper.Position = UDim2.new(0.0675990582, 0, 0.627659559, 0)
+StreamSniper.Size = UDim2.new(0, 154, 0, 31)
+StreamSniper.Font = Enum.Font.Fantasy
+StreamSniper.Text = "Stream Sniper"
+StreamSniper.TextColor3 = Color3.fromRGB(0, 0, 0)
+StreamSniper.TextSize = 14.000
+
+OwlHub.Name = "OwlHub"
+OwlHub.Parent = ScriptsFrame
+OwlHub.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
+OwlHub.Position = UDim2.new(0.0675990582, 0, 0.382978737, 0)
+OwlHub.Size = UDim2.new(0, 154, 0, 31)
+OwlHub.Font = Enum.Font.Fantasy
+OwlHub.Text = "OwlHub"
+OwlHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+OwlHub.TextSize = 14.000
+
+FEDog.Name = "FE Dog"
+FEDog.Parent = ScriptsFrame
+FEDog.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
+FEDog.Position = UDim2.new(0.543123543, 0, 0.627659559, 0)
+FEDog.Size = UDim2.new(0, 154, 0, 31)
+FEDog.Font = Enum.Font.Fantasy
+FEDog.Text = "FE Dog"
+FEDog.TextColor3 = Color3.fromRGB(0, 0, 0)
+FEDog.TextSize = 14.000
+
+CreditsFrame.Name = "CreditsFrame"
+CreditsFrame.Parent = Frame
+CreditsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CreditsFrame.BackgroundTransparency = 1.000
+CreditsFrame.Position = UDim2.new(0.246045694, 0, 0.167647064, 0)
+CreditsFrame.Size = UDim2.new(0, 428, 0, 282)
+CreditsFrame.Visible = false
+
+Credits1.Name = "Credits1"
+Credits1.Parent = CreditsFrame
+Credits1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits1.BackgroundTransparency = 1.000
+Credits1.Position = UDim2.new(0.221962631, 0, 0.0744680911, 0)
+Credits1.Size = UDim2.new(0, 229, 0, 58)
+Credits1.Font = Enum.Font.Fantasy
+Credits1.Text = "Credits - weelshot#0553 - For making the Script Hub"
+Credits1.TextColor3 = Color3.fromRGB(207, 207, 207)
+Credits1.TextSize = 15.000
+
+Credits2.Name = "Credits2"
+Credits2.Parent = CreditsFrame
+Credits2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits2.BackgroundTransparency = 1.000
+Credits2.Position = UDim2.new(0.221962616, 0, 0.28014189, 0)
+Credits2.Size = UDim2.new(0, 229, 0, 58)
+Credits2.Font = Enum.Font.Fantasy
+Credits2.Text = "Credits to the owners of the scripts used in the script hub"
+Credits2.TextColor3 = Color3.fromRGB(207, 207, 207)
+Credits2.TextSize = 15.000
+
+SettingsFrame.Name = "SettingsFrame"
+SettingsFrame.Parent = Frame
+SettingsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SettingsFrame.BackgroundTransparency = 1.000
+SettingsFrame.Position = UDim2.new(0.244288221, 0, 0.167647064, 0)
+SettingsFrame.Size = UDim2.new(0, 429, 0, 282)
+
+Desc.Name = "Desc"
+Desc.Parent = SettingsFrame
+Desc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Desc.BackgroundTransparency = 1.000
+Desc.Position = UDim2.new(0.383915335, 0, 0.0838120878, 0)
+Desc.Size = UDim2.new(0, 102, 0, 102)
+Desc.ZIndex = 1231234
+Desc.Font = Enum.Font.Fantasy
+Desc.Text = "Welcome to WatchWare V2! A hub being developed by weelshot#0553."
+Desc.TextColor3 = Color3.fromRGB(198, 198, 198)
+Desc.TextSize = 14.000
+Desc.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+Title.Name = "Title"
+Title.Parent = SettingsFrame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.310101658, 0, -0.00519621372, 0)
+Title.Size = UDim2.new(0, 170, 0, 44)
+Title.ZIndex = 1231234
+Title.Font = Enum.Font.Gotham
+Title.Text = "WatchWare V2"
+Title.TextColor3 = Color3.fromRGB(198, 198, 198)
+Title.TextSize = 25.000
+Title.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+UICorner_3.Parent = Frame
+
+-- Scripts:
+
+local function LPGLW_fake_script() -- Scripts.LocalScript 
+	local script = Instance.new('LocalScript', Scripts)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.CreditsFrame.Visible = false
+		script.Parent.Parent.Parent.SettingsFrame.Visible = false
+		script.Parent.Parent.Parent.ScriptsFrame.Visible = true
+	end)
+end
+coroutine.wrap(LPGLW_fake_script)()
+local function UAAA_fake_script() -- Credits.LocalScript 
+	local script = Instance.new('LocalScript', Credits)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.CreditsFrame.Visible = true
+		script.Parent.Parent.Parent.SettingsFrame.Visible = false
+		script.Parent.Parent.Parent.ScriptsFrame.Visible = false
+	end)
+end
+coroutine.wrap(UAAA_fake_script)()
+local function KDDJIY_fake_script() -- Settings.LocalScript 
+	local script = Instance.new('LocalScript', Settings)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.CreditsFrame.Visible = false
+		script.Parent.Parent.Parent.SettingsFrame.Visible = true
+		script.Parent.Parent.Parent.ScriptsFrame.Visible = false
+	end)
+end
+coroutine.wrap(KDDJIY_fake_script)()
+local function PNWGKQY_fake_script() -- LXHub.LocalScript 
+	local script = Instance.new('LocalScript', LXHub)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/LionelStreaming/GumaHub/main/LX-FE-Hub"))()
+	end)
+end
+coroutine.wrap(PNWGKQY_fake_script)()
+local function SMWWYV_fake_script() -- VHUB.LocalScript 
+	local script = Instance.new('LocalScript', VHUB)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(('\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\52\103\102\114\72\120\52\82'),true))()
+	end)
+	
+	
+	
+end
+coroutine.wrap(SMWWYV_fake_script)()
+local function HUZZNTK_fake_script() -- Syntax13.LocalScript 
+	local script = Instance.new('LocalScript', Syntax13)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/Vallater/SyntaxFE/fbbffe71caabfa5341bb0e09865c0659574978e8/GG.txt'),true))()
+	end)
+	
+	
+	
+end
+coroutine.wrap(HUZZNTK_fake_script)()
+local function ZYRIWF_fake_script() -- StreamSniper.LocalScript 
+	local script = Instance.new('LocalScript', StreamSniper)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Blissful4992/Miscellaneous/main/StreamSniper.lua"))()
+	end)
+	
+	
+	
+end
+coroutine.wrap(ZYRIWF_fake_script)()
+local function TTYTZ_fake_script() -- OwlHub.LocalScript 
+	local script = Instance.new('LocalScript', OwlHub)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
+	end)
+	
+	
+	
+end
+coroutine.wrap(TTYTZ_fake_script)()
+local function XLIIK_fake_script() -- FEDog.LocalScript 
+	local script = Instance.new('LocalScript', FEDog)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/garfieldscripter/FE-Dog-Pet-not-mine-/main/fe%20dog"))()
+	end)
+	
+	
+	
+end
+coroutine.wrap(XLIIK_fake_script)()
+local function ZLUT_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(ZLUT_fake_script)()
