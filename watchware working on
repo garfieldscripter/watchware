@@ -1,4 +1,5 @@
-
+-- Gui to Lua
+-- Version: 3.2
 
 -- Instances:
 
@@ -333,6 +334,7 @@ CreditsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 CreditsFrame.BackgroundTransparency = 1.000
 CreditsFrame.Position = UDim2.new(0.246045694, 0, 0.167647064, 0)
 CreditsFrame.Size = UDim2.new(0, 428, 0, 282)
+CreditsFrame.Visible = false
 
 Credits1.Name = "Credits1"
 Credits1.Parent = CreditsFrame
@@ -415,7 +417,6 @@ SettingsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 SettingsFrame.BackgroundTransparency = 1.000
 SettingsFrame.Position = UDim2.new(0.244288221, 0, 0.167647064, 0)
 SettingsFrame.Size = UDim2.new(0, 429, 0, 282)
-SettingsFrame.Visible = false
 
 Desc.Name = "Desc"
 Desc.Parent = SettingsFrame
@@ -484,7 +485,7 @@ TextButton.TextSize = 20.000
 
 -- Scripts:
 
-local function PZFIXZ_fake_script() -- Scripts.LocalScript 
+local function GJHYE_fake_script() -- Scripts.LocalScript 
 	local script = Instance.new('LocalScript', Scripts)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -493,8 +494,8 @@ local function PZFIXZ_fake_script() -- Scripts.LocalScript
 		script.Parent.Parent.Parent.ScriptsFrame.Visible = true
 	end)
 end
-coroutine.wrap(PZFIXZ_fake_script)()
-local function PLZCO_fake_script() -- Credits.LocalScript 
+coroutine.wrap(GJHYE_fake_script)()
+local function WVKGQB_fake_script() -- Credits.LocalScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -503,8 +504,8 @@ local function PLZCO_fake_script() -- Credits.LocalScript
 		script.Parent.Parent.Parent.ScriptsFrame.Visible = false
 	end)
 end
-coroutine.wrap(PLZCO_fake_script)()
-local function GUJZ_fake_script() -- Settings.LocalScript 
+coroutine.wrap(WVKGQB_fake_script)()
+local function CXDS_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -514,8 +515,8 @@ local function GUJZ_fake_script() -- Settings.LocalScript
 		script.Parent.Parent.Parent.Parent.ScriptsFrame.Visible = false
 	end)
 end
-coroutine.wrap(GUJZ_fake_script)()
-local function WRAWO_fake_script() -- VHUB.LocalScript 
+coroutine.wrap(CXDS_fake_script)()
+local function NDIRR_fake_script() -- VHUB.LocalScript 
 	local script = Instance.new('LocalScript', VHUB)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -525,8 +526,8 @@ local function WRAWO_fake_script() -- VHUB.LocalScript
 	
 	
 end
-coroutine.wrap(WRAWO_fake_script)()
-local function DGEXYN_fake_script() -- Syntax13.LocalScript 
+coroutine.wrap(NDIRR_fake_script)()
+local function OEXDV_fake_script() -- Syntax13.LocalScript 
 	local script = Instance.new('LocalScript', Syntax13)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -536,8 +537,8 @@ local function DGEXYN_fake_script() -- Syntax13.LocalScript
 	
 	
 end
-coroutine.wrap(DGEXYN_fake_script)()
-local function NMOPGW_fake_script() -- SCP096.LocalScript 
+coroutine.wrap(OEXDV_fake_script)()
+local function JVLEAW_fake_script() -- SCP096.LocalScript 
 	local script = Instance.new('LocalScript', SCP096)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -547,8 +548,8 @@ local function NMOPGW_fake_script() -- SCP096.LocalScript
 	
 	
 end
-coroutine.wrap(NMOPGW_fake_script)()
-local function CPVHVK_fake_script() -- OwlHub.LocalScript 
+coroutine.wrap(JVLEAW_fake_script)()
+local function OZFO_fake_script() -- OwlHub.LocalScript 
 	local script = Instance.new('LocalScript', OwlHub)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -558,8 +559,8 @@ local function CPVHVK_fake_script() -- OwlHub.LocalScript
 	
 	
 end
-coroutine.wrap(CPVHVK_fake_script)()
-local function JBYDN_fake_script() -- FEDog.LocalScript 
+coroutine.wrap(OZFO_fake_script)()
+local function UDLJZ_fake_script() -- FEDog.LocalScript 
 	local script = Instance.new('LocalScript', FEDog)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -569,8 +570,8 @@ local function JBYDN_fake_script() -- FEDog.LocalScript
 	
 	
 end
-coroutine.wrap(JBYDN_fake_script)()
-local function YZGMW_fake_script() -- LXHub.LocalScript 
+coroutine.wrap(UDLJZ_fake_script)()
+local function UZNQ_fake_script() -- LXHub.LocalScript 
 	local script = Instance.new('LocalScript', LXHub)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -580,8 +581,8 @@ local function YZGMW_fake_script() -- LXHub.LocalScript
 	
 	
 end
-coroutine.wrap(YZGMW_fake_script)()
-local function VVTL_fake_script() -- StreamSniper.LocalScript 
+coroutine.wrap(UZNQ_fake_script)()
+local function FYNUHWS_fake_script() -- StreamSniper.LocalScript 
 	local script = Instance.new('LocalScript', StreamSniper)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -591,8 +592,8 @@ local function VVTL_fake_script() -- StreamSniper.LocalScript
 	
 	
 end
-coroutine.wrap(VVTL_fake_script)()
-local function HNYDZB_fake_script() -- controllabledummy.LocalScript 
+coroutine.wrap(FYNUHWS_fake_script)()
+local function ZMEIR_fake_script() -- controllabledummy.LocalScript 
 	local script = Instance.new('LocalScript', controllabledummy)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -602,8 +603,8 @@ local function HNYDZB_fake_script() -- controllabledummy.LocalScript
 	
 	
 end
-coroutine.wrap(HNYDZB_fake_script)()
-local function OACHPQ_fake_script() -- catpet.LocalScript 
+coroutine.wrap(ZMEIR_fake_script)()
+local function UQLK_fake_script() -- catpet.LocalScript 
 	local script = Instance.new('LocalScript', catpet)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -613,8 +614,8 @@ local function OACHPQ_fake_script() -- catpet.LocalScript
 	
 	
 end
-coroutine.wrap(OACHPQ_fake_script)()
-local function YMUXB_fake_script() -- fesoldier.LocalScript 
+coroutine.wrap(UQLK_fake_script)()
+local function YHIC_fake_script() -- fesoldier.LocalScript 
 	local script = Instance.new('LocalScript', fesoldier)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -624,8 +625,8 @@ local function YMUXB_fake_script() -- fesoldier.LocalScript
 	
 	
 end
-coroutine.wrap(YMUXB_fake_script)()
-local function OLGLQL_fake_script() -- feskateboard.LocalScript 
+coroutine.wrap(YHIC_fake_script)()
+local function ATCYZK_fake_script() -- feskateboard.LocalScript 
 	local script = Instance.new('LocalScript', feskateboard)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -635,8 +636,8 @@ local function OLGLQL_fake_script() -- feskateboard.LocalScript
 	
 	
 end
-coroutine.wrap(OLGLQL_fake_script)()
-local function ELBIGFY_fake_script() -- Frame.LocalScript 
+coroutine.wrap(ATCYZK_fake_script)()
+local function TDYIPU_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -679,8 +680,8 @@ local function ELBIGFY_fake_script() -- Frame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ELBIGFY_fake_script)()
-local function SDFWRMR_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(TDYIPU_fake_script)()
+local function UUHNCNM_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -690,4 +691,4 @@ local function SDFWRMR_fake_script() -- TextButton.LocalScript
 	
 	
 end
-coroutine.wrap(SDFWRMR_fake_script)()
+coroutine.wrap(UUHNCNM_fake_script)()
