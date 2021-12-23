@@ -41,15 +41,16 @@ local Credits1_2 = Instance.new("TextLabel")
 local Credits1_3 = Instance.new("TextLabel")
 local ImageLabel_6 = Instance.new("ImageLabel")
 local Credits1_4 = Instance.new("TextLabel")
+local Desc = Instance.new("TextLabel")
 local UICorner_3 = Instance.new("UICorner")
 local TopBar = Instance.new("Frame")
 local ImageLabel_7 = Instance.new("ImageLabel")
 local ImageLabel_8 = Instance.new("ImageLabel")
 local UICorner_4 = Instance.new("UICorner")
 local SettingsFrame = Instance.new("Frame")
-local Desc = Instance.new("TextLabel")
-local Title = Instance.new("TextLabel")
 local Desc_2 = Instance.new("TextLabel")
+local Title = Instance.new("TextLabel")
+local Desc_3 = Instance.new("TextLabel")
 local http = Instance.new("ImageButton")
 local ImageLabel_9 = Instance.new("ImageLabel")
 local TextButton = Instance.new("TextButton")
@@ -387,6 +388,19 @@ Credits1_4.Text = "https://discord.gg/vJAK6pfG"
 Credits1_4.TextColor3 = Color3.fromRGB(207, 207, 207)
 Credits1_4.TextSize = 25.000
 
+Desc.Name = "Desc"
+Desc.Parent = CreditsFrame
+Desc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Desc.BackgroundTransparency = 1.000
+Desc.Position = UDim2.new(0.360550851, 0, 0.753284931, 0)
+Desc.Size = UDim2.new(0, 102, 0, 101)
+Desc.ZIndex = 1231234
+Desc.Font = Enum.Font.Fantasy
+Desc.Text = "Credits to weelshot#0553 for developing this script hub."
+Desc.TextColor3 = Color3.fromRGB(255, 170, 127)
+Desc.TextSize = 18.000
+Desc.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
 UICorner_3.Parent = Frame
 
 TopBar.Name = "TopBar"
@@ -418,18 +432,18 @@ SettingsFrame.BackgroundTransparency = 1.000
 SettingsFrame.Position = UDim2.new(0.244288221, 0, 0.167647064, 0)
 SettingsFrame.Size = UDim2.new(0, 429, 0, 282)
 
-Desc.Name = "Desc"
-Desc.Parent = SettingsFrame
-Desc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Desc.BackgroundTransparency = 1.000
-Desc.Position = UDim2.new(0.383915335, 0, 0.0838120878, 0)
-Desc.Size = UDim2.new(0, 102, 0, 102)
-Desc.ZIndex = 1231234
-Desc.Font = Enum.Font.Fantasy
-Desc.Text = "Welcome to WatchWare V2! A hub being developed by weelshot#0553."
-Desc.TextColor3 = Color3.fromRGB(198, 198, 198)
-Desc.TextSize = 14.000
-Desc.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Desc_2.Name = "Desc"
+Desc_2.Parent = SettingsFrame
+Desc_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Desc_2.BackgroundTransparency = 1.000
+Desc_2.Position = UDim2.new(0.383915335, 0, 0.0838120878, 0)
+Desc_2.Size = UDim2.new(0, 102, 0, 102)
+Desc_2.ZIndex = 1231234
+Desc_2.Font = Enum.Font.Fantasy
+Desc_2.Text = "Welcome to WatchWare V2! A hub being developed by weelshot#0553."
+Desc_2.TextColor3 = Color3.fromRGB(198, 198, 198)
+Desc_2.TextSize = 14.000
+Desc_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 Title.Name = "Title"
 Title.Parent = SettingsFrame
@@ -444,18 +458,18 @@ Title.TextColor3 = Color3.fromRGB(198, 198, 198)
 Title.TextSize = 25.000
 Title.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
-Desc_2.Name = "Desc"
-Desc_2.Parent = SettingsFrame
-Desc_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Desc_2.BackgroundTransparency = 1.000
-Desc_2.Position = UDim2.new(0.383915335, 0, 0.168178573, 0)
-Desc_2.Size = UDim2.new(0, 102, 0, 101)
-Desc_2.ZIndex = 1231234
-Desc_2.Font = Enum.Font.Fantasy
-Desc_2.Text = "Credits to weelshot#0553 for developing this script hub."
-Desc_2.TextColor3 = Color3.fromRGB(255, 170, 127)
-Desc_2.TextSize = 18.000
-Desc_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Desc_3.Name = "Desc"
+Desc_3.Parent = SettingsFrame
+Desc_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Desc_3.BackgroundTransparency = 1.000
+Desc_3.Position = UDim2.new(0.383915335, 0, 0.168178573, 0)
+Desc_3.Size = UDim2.new(0, 102, 0, 101)
+Desc_3.ZIndex = 1231234
+Desc_3.Font = Enum.Font.Fantasy
+Desc_3.Text = "Credits to weelshot#0553 for developing this script hub."
+Desc_3.TextColor3 = Color3.fromRGB(255, 170, 127)
+Desc_3.TextSize = 18.000
+Desc_3.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 http.Name = "http"
 http.Parent = SettingsFrame
@@ -485,7 +499,7 @@ TextButton.TextSize = 20.000
 
 -- Scripts:
 
-local function GJHYE_fake_script() -- Scripts.LocalScript 
+local function ERFG_fake_script() -- Scripts.LocalScript 
 	local script = Instance.new('LocalScript', Scripts)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -494,8 +508,8 @@ local function GJHYE_fake_script() -- Scripts.LocalScript
 		script.Parent.Parent.Parent.ScriptsFrame.Visible = true
 	end)
 end
-coroutine.wrap(GJHYE_fake_script)()
-local function WVKGQB_fake_script() -- Credits.LocalScript 
+coroutine.wrap(ERFG_fake_script)()
+local function YGSR_fake_script() -- Credits.LocalScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -504,8 +518,8 @@ local function WVKGQB_fake_script() -- Credits.LocalScript
 		script.Parent.Parent.Parent.ScriptsFrame.Visible = false
 	end)
 end
-coroutine.wrap(WVKGQB_fake_script)()
-local function CXDS_fake_script() -- Settings.LocalScript 
+coroutine.wrap(YGSR_fake_script)()
+local function SZVF_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -515,8 +529,8 @@ local function CXDS_fake_script() -- Settings.LocalScript
 		script.Parent.Parent.Parent.Parent.ScriptsFrame.Visible = false
 	end)
 end
-coroutine.wrap(CXDS_fake_script)()
-local function NDIRR_fake_script() -- VHUB.LocalScript 
+coroutine.wrap(SZVF_fake_script)()
+local function VKRFJZZ_fake_script() -- VHUB.LocalScript 
 	local script = Instance.new('LocalScript', VHUB)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -526,8 +540,8 @@ local function NDIRR_fake_script() -- VHUB.LocalScript
 	
 	
 end
-coroutine.wrap(NDIRR_fake_script)()
-local function OEXDV_fake_script() -- Syntax13.LocalScript 
+coroutine.wrap(VKRFJZZ_fake_script)()
+local function CWOJ_fake_script() -- Syntax13.LocalScript 
 	local script = Instance.new('LocalScript', Syntax13)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -537,8 +551,8 @@ local function OEXDV_fake_script() -- Syntax13.LocalScript
 	
 	
 end
-coroutine.wrap(OEXDV_fake_script)()
-local function JVLEAW_fake_script() -- SCP096.LocalScript 
+coroutine.wrap(CWOJ_fake_script)()
+local function GKYPW_fake_script() -- SCP096.LocalScript 
 	local script = Instance.new('LocalScript', SCP096)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -548,8 +562,8 @@ local function JVLEAW_fake_script() -- SCP096.LocalScript
 	
 	
 end
-coroutine.wrap(JVLEAW_fake_script)()
-local function OZFO_fake_script() -- OwlHub.LocalScript 
+coroutine.wrap(GKYPW_fake_script)()
+local function MCUIM_fake_script() -- OwlHub.LocalScript 
 	local script = Instance.new('LocalScript', OwlHub)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -559,8 +573,8 @@ local function OZFO_fake_script() -- OwlHub.LocalScript
 	
 	
 end
-coroutine.wrap(OZFO_fake_script)()
-local function UDLJZ_fake_script() -- FEDog.LocalScript 
+coroutine.wrap(MCUIM_fake_script)()
+local function OMUJ_fake_script() -- FEDog.LocalScript 
 	local script = Instance.new('LocalScript', FEDog)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -570,8 +584,8 @@ local function UDLJZ_fake_script() -- FEDog.LocalScript
 	
 	
 end
-coroutine.wrap(UDLJZ_fake_script)()
-local function UZNQ_fake_script() -- LXHub.LocalScript 
+coroutine.wrap(OMUJ_fake_script)()
+local function HVPCYXB_fake_script() -- LXHub.LocalScript 
 	local script = Instance.new('LocalScript', LXHub)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -581,8 +595,8 @@ local function UZNQ_fake_script() -- LXHub.LocalScript
 	
 	
 end
-coroutine.wrap(UZNQ_fake_script)()
-local function FYNUHWS_fake_script() -- StreamSniper.LocalScript 
+coroutine.wrap(HVPCYXB_fake_script)()
+local function HTQVH_fake_script() -- StreamSniper.LocalScript 
 	local script = Instance.new('LocalScript', StreamSniper)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -592,8 +606,8 @@ local function FYNUHWS_fake_script() -- StreamSniper.LocalScript
 	
 	
 end
-coroutine.wrap(FYNUHWS_fake_script)()
-local function ZMEIR_fake_script() -- controllabledummy.LocalScript 
+coroutine.wrap(HTQVH_fake_script)()
+local function HCLMVYN_fake_script() -- controllabledummy.LocalScript 
 	local script = Instance.new('LocalScript', controllabledummy)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -603,8 +617,8 @@ local function ZMEIR_fake_script() -- controllabledummy.LocalScript
 	
 	
 end
-coroutine.wrap(ZMEIR_fake_script)()
-local function UQLK_fake_script() -- catpet.LocalScript 
+coroutine.wrap(HCLMVYN_fake_script)()
+local function PARBIU_fake_script() -- catpet.LocalScript 
 	local script = Instance.new('LocalScript', catpet)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -614,8 +628,8 @@ local function UQLK_fake_script() -- catpet.LocalScript
 	
 	
 end
-coroutine.wrap(UQLK_fake_script)()
-local function YHIC_fake_script() -- fesoldier.LocalScript 
+coroutine.wrap(PARBIU_fake_script)()
+local function OJHE_fake_script() -- fesoldier.LocalScript 
 	local script = Instance.new('LocalScript', fesoldier)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -625,8 +639,8 @@ local function YHIC_fake_script() -- fesoldier.LocalScript
 	
 	
 end
-coroutine.wrap(YHIC_fake_script)()
-local function ATCYZK_fake_script() -- feskateboard.LocalScript 
+coroutine.wrap(OJHE_fake_script)()
+local function GXFVXUL_fake_script() -- feskateboard.LocalScript 
 	local script = Instance.new('LocalScript', feskateboard)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -636,8 +650,8 @@ local function ATCYZK_fake_script() -- feskateboard.LocalScript
 	
 	
 end
-coroutine.wrap(ATCYZK_fake_script)()
-local function TDYIPU_fake_script() -- Frame.LocalScript 
+coroutine.wrap(GXFVXUL_fake_script)()
+local function VOCV_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -680,8 +694,8 @@ local function TDYIPU_fake_script() -- Frame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(TDYIPU_fake_script)()
-local function UUHNCNM_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(VOCV_fake_script)()
+local function BQID_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -691,4 +705,4 @@ local function UUHNCNM_fake_script() -- TextButton.LocalScript
 	
 	
 end
-coroutine.wrap(UUHNCNM_fake_script)()
+coroutine.wrap(BQID_fake_script)()
